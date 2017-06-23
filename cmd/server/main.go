@@ -6,7 +6,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/enzian/lxdlet/lxdlet"
+	"github.com/enzian/kube-lxd/lxdlet"
 	"github.com/golang/glog"
 	runtimeapi "github.com/kubernetes/kubernetes/pkg/kubelet/apis/cri/v1alpha1/runtime"
 	"github.com/kubernetes/kubernetes/pkg/util/logs"
