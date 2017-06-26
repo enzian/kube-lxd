@@ -1,7 +1,7 @@
-package: github.com/enzian/lxdlet
+package: github.com/enzian/kube-lxd
 import:
 - package: github.com/kubernetes/kubernetes
-  version: v1.8.0-alpha.1
+  version: d779e9c9561b732adf06263c5424889e7564fdbd
   subpackages:
   - pkg/api
   - pkg/api/resource

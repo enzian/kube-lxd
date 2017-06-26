@@ -1,6 +1,6 @@
 package lxdlet
 
-import runtimeapi "github.com/kubernetes/kubernetes/pkg/kubelet/apis/cri/v1alpha1/runtime"
+import runtimeApi "github.com/kubernetes/kubernetes/pkg/kubelet/apis/cri/v1alpha1/runtime"
 
 func New() (ContainerAndImageService, error) {
 	return combinedRuntimes{
@@ -10,11 +10,11 @@ func New() (ContainerAndImageService, error) {
 }
 
 type combinedRuntimes struct {
-	runtimeapi.RuntimeServiceServer
-	runtimeapi.ImageServiceServer
+	runtimeApi.RuntimeServiceServer
+	runtimeApi.ImageServiceServer
 }
 
 type ContainerAndImageService interface {
-	runtimeapi.RuntimeServiceServer
-	runtimeapi.ImageServiceServer
+	runtimeApi.RuntimeServiceServer
+	runtimeApi.ImageServiceServer
 }
